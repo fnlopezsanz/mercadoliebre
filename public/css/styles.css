@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+}
+
+header {
+  background-color: #EAC926;
+}
+
+.top-header {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  padding: 15px 8px;
+}
+
+.logo,
+.buscador {
+  width: 50%; 
+}
+
+.buscador {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.barra {
+  width: 90%;
+  height: 30px;
+  border: transparent 2px;
+  border-radius: 3px;
+}
+
+.top-header p {
+  align-self: center;
+  justify-self: center;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  display: none;
+}
+
+nav ul li {
+  font-size: 12px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.banner img{
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section {
+  padding: 15px 0;
+}
+
+main h3 {
+  font-size: 24px;
+  color: #666;
+  padding-bottom: 12px;
+}
+
+main section .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main section article {
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+.fa-truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: #39b54a;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: 1000ms;
+}
+
+.main-article {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount {
+  padding-left: 20px;
+  color: #39b54a;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+}
+
+.description {
+  color: #666;
+  font-weight: 600;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer section {
+  margin: 15px;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+}
+
+footer h4 {
+  padding-bottom: 6px;
+}
+
+footer i {
+  font-size: 2em;
+  color: #03264C;
+  margin-bottom: 10px;
+  transition: all 200ms;
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+
+@media (min-width: 481px) {
+  .top-header {
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    width: 32%;
+  }
+
+  .buscador{
+    width: 100%;
+  }
+
+  .p-header {
+    width: 15%;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+  
+  nav ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    padding: 0 3px;
+  }
+
+  nav ul li a {
+    color: #03264C;
+  }
+
+  nav ul i {
+    margin-left: 1px;
+  }
+
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section div {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
+
+  main section .products {
+    display: flex;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    width: 45%;
+    transition: all 1000ms;
+}
+
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+.description {
+  color: #666;
+  font-weight: 600;
+  display: none;
+  transition: all 1s;
+}
+
+main section article:hover .description {
+display: block;
+}
+
+main section article:hover .fa-truck {
+  transform: rotate(-90deg);
+}
+
+footer section i:hover {
+  color: blue;
+}
+}
+
+@media (min-width: 769px) {
+  main section article {
+    width: 22%;
+    position: relative;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+  }
+
+  footer section {
+    width: 30%;
+    margin: 5px 3px;
+    padding: 2px;
+  }
+}
